@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    background-color: #fafafa;
+}
+
+#navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #ebebeb;
+    border-right: 4px solid #00ae6b;
+    width: 280px;
+    height: 100vh;
+}
+
+
+
+.nav-link{
+    text-decoration: none;
+    color: #1d1d1d;
+}
+
+#navbar header{
+    margin:10px;
+    font-weight: 600;
+}
+
+.navbar-button{
+    text-align: left;
+    border: 1px solid #bebebe;
+    padding: 10px 20px;
+    font-style: normal;
+    transition: 0.1s;
+}
+
+.navbar-button:hover{
+    background-color: #a7a7a7;
+}
+
+#advert h1{
+    font-size: 1.2rem;
+    font-style: italic;
+    padding: 20px 20px 10px 20px;
+    text-align: center;
+}
+
+#advert p{
+    padding: 5px 20px;
+    text-align: justify;
+}
+
+
+
+
+#main-doc{
+    margin-top: 20px;
+    margin-left: 312px;
+}
+
+header{
+    font-size: 2rem;
+}
+
+article{
+    margin: 15px 20px;  
+}
+
+ul{
+    margin-left: 20px;
+}
+
+h2{
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+
+table{
+    margin:15px 0px;
+}
+
+td{
+    padding: 10px;
+    border: 1px solid grey;
+}
+
+.red{
+    color: rgb(253, 49, 49);
+    margin: 0 15px;
+}
+
+.comment{
+    color: rgb(252, 77, 64);
+}
+
+p{
+    font-size: 1rem;
+}
+
+code{
+    display: block;
+    text-align: left;
+    white-space: pre-line;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color: rgb(235, 235, 235);
+    padding: 15px;
+    margin: 20px 25px;
+    border-radius: 5px;  
+}
+
+
+@media only screen and (max-width: 815px) {
+    #advert{
+        display: none;
+    }
+    #navbar{
+        position: absolute;
+        width: 100%;
+        height: 280px;
+        border-right: none;
+        overflow: scroll;
+    }
+
+    #main-doc{
+        margin-top: 310px;
+        margin-left: 15px;
+    }
+}
